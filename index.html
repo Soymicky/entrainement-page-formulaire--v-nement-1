@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="width=device-width, initial-scale=1.0">
     <title>Inscription événement Slish</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -16,7 +16,52 @@
     </header>
 
     <main>
-        <form action="" method="get"></form>
+        <section>
+            <table>
+                <th>Évènement Slish</th>
+                
+            </table>
+
+
+        </section>
+        <!-- Le formulaire -->
+        <form action="" method="get">
+
+            <!-- Le nom -->
+            <label for="name">Nom</label>
+            <input type="text" name="name" id="name" placeholder="Votre nom" required>
+
+            <!-- Le prénom -->
+
+            <label for="firstname">Prénom</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Votre prénom" required>
+
+            <!-- L'adresse mail -->
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Votre adresse mail" required>
+
+            <!-- La date de naissance -->
+
+            <label for="birth">Date de naissance</label>
+            <input type="date" name="birth" id="birth" required>
+
+            <!-- Choix des catégories -->
+            <div>
+            <label for="choice">Choix de catégorie préférée:</label>
+            <select name="choice" id="choice" required>
+                <option value="">Veuillez choisir une option</option>
+                <option value="BD">Bande dessinée</option>
+                <option value="Manga">Manga</option>
+                <option value="fantaisie">Fantasie</option>
+                <option value="action/aventure">Action & Aventure</option>
+                <option value="drame/romance">Drame & Romance</option>
+                <option value="thriller/horreur">Thriller & Horreur</option>
+                <option value="mystère/historique">Mystère & Historique</option>
+            </select>
+            </div>
+            <button type="submit">Envoyez</button>
+        </form>
 
 
     </main>
